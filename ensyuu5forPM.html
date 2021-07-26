@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<title>【第5週】演習問題まとめ</title>
+		<link rel="shortcut icon" type="image/x-icon" href="img/iconSub.png">
+		<style>
+			@media screen and ( max-width: 600px ){ html{ font-size: 100%; } }
+			#ToHome { border: solid 1px black; padding: .7em 1em; position: absolute; top: .5em; right: 5em; }
+			* { font-family: sans-serif; word-break: keep-all; }
+			h1 { border-left: .2em solid olive; background-color: palegoldenrod; margin: 3em 0 1em 0; font-size: 1.5em; padding: .3em 0; }
+			.ToTop{ width: 3em; height: 3em; position: fixed; right: 2em; bottom: 2em; background: orangered; opacity: 0.95; border-radius: 50%; }
+			.ToTop a{ position: relative; display: block; width: 5em; height: 5em; }
+			.ToTop::before{ position: absolute; font-size: .7em; border-top: .3em solid white; border-right: .3em solid white; border-right-radius: 20px; border-radius: 0 .12em; content: ""; transform: translate( 1em, -.5em ) rotate( 315deg ); display: inline-block; padding-top: 0em; padding-left: 0em; width: 1em; height: 1em; right: 2.5em; bottom: .7em; }
+			.balloon{ position: relative; padding: 1em; margin-top: .5em; background-color: teal; color: white; border-radius: 10px; width: 30%; left : 5em; }
+			.balloon::before{ content: ''; position: absolute; display: block; width: 0; height: 0; border-radius: 50%; transform: rotate( 45deg ); left: 20px; top: -15px; border-left: 20px solid teal; border-top: 20px solid teal; border-right: 20px solid transparent; border-bottom: 20px solid transparent; }
+			.balloon::after{ content: ''; position: absolute; display: block; width: 0; height: 0; border-radius: 50%; transform: rotate(45deg); left: 35px; top: -20px; border-left: 20px solid white; border-top: 20px solid white; border-right: 20px solid transparent; border-bottom: 20px solid transparent; }
+			a { text-decoration: none; }
+			a:link, a:visited, a:hover, a:active { color: black; }
+			.LinkAnserP { background-color: lightgreen; border: solid 1px black; padding: .7em 1em; width: 70%; margin: 1em 0 0 5em; }
+			.LinkAnserP a:hover { opacity: 0.5; }
+			#ToHome a:hover { font-size: 1.2em; }
+			h2 { margin: 0; font-size: 1.2em; }
+			input#acd-check1{ display: none; }
+			input#acd-check2{ display: none; }
+			input#acd-check3{ display: none; }
+			input#acd-check4{ display: none; }
+			input#acd-check5{ display: none; }
+			input#acd-check6{ display: none; }
+			input#acd-check7{ display: none; }
+			input#acd-check8{ display: none; }
+			input#acd-check9{ display: none; }
+			input#acd-check10{ display: none; }
+			.acd-label{ border-top:  .3em solid crimson; background: lemonchiffon; color: crimson; font-weight: bold; display: block; margin: .5em 3em; padding: .5em; }
+			.acd-content{ height: 0; visibility: hidden; }
+			.acd-check:checked + .acd-label + .acd-content{ border:  1px dashed crimson; height: 3em; margin: 0 3em; padding: .5em; visibility: visible; }
+			.mondaiImg1 { background: url( "img/mondai.png" ); margin: .5em 0;width: 404px; height: 239px; margin-left: 3em; }
+			.mondaiImg2 { background: url( "img/mondai.png" ); margin: .5em 0;width: 477px; height: 292px; margin-left: 3em; background-position: 0px -239px; }
+			.mondaiImg3 { background: url( "img/mondai.png" ); margin: .5em 0;width: 466px; height: 291px; margin-left: 3em; background-position: 0px -531px; }
+			.mondaiImg4 { background: url( "img/mondai.png" ); margin: .5em 0;width: 428px; height: 218px; margin-left: 3em; background-position: 0px -842px; }
+		</style>
+	</head>
+	<body>
+		<div id = "ToHome"><a href = "index.html">ホーム画面へ</a></div>
+		<h1>【第5週】演習問題</h1>
+		<div class="balloon">Let's 試験対策！P334～361</div>
+		<h2>問1：</h2>
+		<div style = "padding-left: 2em; margin-right: 1em;">あるプロジェクトの日程計画をアローダイアグラムで示す。クリティカルパスはどれか。</div>
+		<div class = "mondaiImg1"></div>
+		<div style = "margin-left: 4em;"><span>ア：</span>A，C，E，F</div>
+		<div style = "margin-left: 4em;"><span>イ：</span>A，D，G</div>
+		<div style = "margin-left: 4em;"><span>ウ：</span>B，E，F</div>
+		<div style = "margin-left: 4em;"><span>エ：</span>B，E，G</div>
+		<input id="acd-check1" class="acd-check" type="checkbox">
+		<label class="acd-label" for="acd-check1">回答をみる</label>
+		<div class="acd-content">
+			<div>
+				<div>正解は「<span style = "color: crimson; font-weight: bold;">ウ</span>」です。</div>
+				<div>解説サイト：<a href = "https://www.fe-siken.com/bunya.php?m=14&s=6&no=2" target = "_blank">平成24春期 問52へ</a></div>
+			</div>
+		</div>
+		<h2>問2：</h2>
+		<div style = "padding-left: 2em; margin-right: 1em;">アローダイアグラムの日程計画をもつプロジェクトの、開始から終了までの最少所要日数は何日か。</div>
+		<div class = "mondaiImg2"></div>
+		<div style = "margin-left: 4em;"><span>ア：</span>9</div>
+		<div style = "margin-left: 4em;"><span>イ：</span>10</div>
+		<div style = "margin-left: 4em;"><span>ウ：</span>11</div>
+		<div style = "margin-left: 4em;"><span>エ：</span>12</div>
+		<input id="acd-check2" class="acd-check" type="checkbox">
+		<label class="acd-label" for="acd-check2">回答をみる</label>
+		<div class="acd-content">
+			<div>
+				<div>正解は「<span style = "color: crimson; font-weight: bold;">エ</span>」です。</div>
+				<div>解説サイト：<a href = "https://www.fe-siken.com/bunya.php?m=14&s=6&no=4" target = "_blank">平成31年春期 問53へ</a></div>
+			</div>
+		</div>
+		<h2>問3：</h2>
+		<div style = "padding-left: 2em; margin-right: 1em;">図のプロジェクトの日程計画において、プロジェクトの所要日数は何日か。</div>
+		<div class = "mondaiImg3"></div>
+		<div style = "margin-left: 4em;"><span>ア：</span>40</div>
+		<div style = "margin-left: 4em;"><span>イ：</span>45</div>
+		<div style = "margin-left: 4em;"><span>ウ：</span>50</div>
+		<div style = "margin-left: 4em;"><span>エ：</span>55</div>
+		<input id="acd-check3" class="acd-check" type="checkbox">
+		<label class="acd-label" for="acd-check3">回答をみる</label>
+		<div class="acd-content">
+			<div>
+				<div>正解は「<span style = "color: crimson; font-weight: bold;">エ</span>」です。</div>
+				<div>解説サイト：<a href = "https://www.fe-siken.com/bunya.php?m=14&s=6&no=5" target = "_blank">平成30年秋期 問52へ</a></div>
+			</div>
+		</div>
+		<h2>問4：</h2>
+		<div style = "padding-left: 2em; margin-right: 1em;">表は、1人で行うプログラム開発の開始時点での計画表である。6月1日に開発を開始し、6月11日の終了時点でコーディング作業の25%が終了した。6月11日の終了時点で残っている作業量は全体の約何%か。ここで、開発は、土曜日と日曜日を除く週5日間で行うものとする。</div>
+		<div class = "mondaiImg4"></div>
+		<div style = "margin-left: 4em;"><span>ア：</span>30</div>
+		<div style = "margin-left: 4em;"><span>イ：</span>47</div>
+		<div style = "margin-left: 4em;"><span>ウ：</span>52</div>
+		<div style = "margin-left: 4em;"><span>エ：</span>53</div>
+		<input id="acd-check4" class="acd-check" type="checkbox">
+		<label class="acd-label" for="acd-check4">回答をみる</label>
+		<div class="acd-content">
+			<div>
+				<div>正解は「<span style = "color: crimson; font-weight: bold;">イ</span>」です。</div>
+				<div>解説サイト：<a href = "https://www.fe-siken.com/bunya.php?m=14&s=6&no=6" target = "_blank">平成30年秋期 問52へ</a></div>
+			</div>
+		</div>
+		<h2>問5：</h2>
+		<div style = "padding-left: 2em; margin-right: 1em;">テストの進捗管理に使用する指標として、最も適切なものはどれか。</div>
+		<div style = "margin-left: 4em;"><span>ア：</span>テスト項目の消化件数</div>
+		<div style = "margin-left: 4em;"><span>イ：</span>テストデータの作成量</div>
+		<div style = "margin-left: 4em;"><span>ウ：</span>プログラムの起動回数</div>
+		<div style = "margin-left: 4em;"><span>エ：</span>プログラムの修正量</div>
+		<input id="acd-check5" class="acd-check" type="checkbox">
+		<label class="acd-label" for="acd-check5">回答をみる</label>
+		<div class="acd-content">
+			<div>
+				<div>正解は「<span style = "color: crimson; font-weight: bold;">ア</span>」です。</div>
+				<div>解説サイト：<a href = "https://www.fe-siken.com/bunya.php?m=14&s=6&no=24" target = "_blank">平成30年秋期 問52へ</a></div>
+			</div>
+		</div>
+		<div class = "ToTop"><a href = "#ToHome"></a></div>
+	</body>
+</html>
