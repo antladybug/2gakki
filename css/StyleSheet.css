@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 @media screen and ( max-width: 600px ){ 
-	#contents, #DMcontents, #beforeGakki, .info { width: 100%; !important}
+	#contents, #DMcontents, #beforeGakki, .info { width: 100% !important; }
 }
 @media screen and ( min-width: 651px ){ html{
 	
@@ -12,35 +12,35 @@
 @-webkit-keyframes blink { 0% { opacity: 0; } 100% { opacity: 1; } }
 @keyframes blink { 0% { opacity: 0 ;} 100% { opacity: 1; } }
 #week { display: flex; justify-content: center; width: 100%; margin: 0 auto; text-align: center; }
-	#contents {
-		padding: 0;
-		margin: .5em;
-		border-top: solid .5em navy;
-		box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
-		height: 5em;
-		width: 30%;
-	}
-	#beforeGakki { display: flex; justify-content: center; width: 100%; margin: 0 auto; text-align: center; }
-	#beforeGakki_contents {
-		padding: 0 0 1em 0;
-		margin: .5em;
-		border-top: solid .5em forestgreen;
-		box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
-		width: 64%;
-	}
-	#DMcontents {
-		padding: 0;
-		margin: .5em;
-		border-top: solid .5em black;
-		box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
-		height: 5em;
-		width: 30%;
-		background-color: whitesmoke;
-	}
-	#beforeGakki_weeknum { font-weight: bold; padding-top: .2em; background-color: lightyellow; }
-	#DMweeknum { margin-bottom: 1em; font-weight: bold; padding-top: .2em; background-color: lightgray; }
-	#weeknum { margin-bottom: 1em; font-weight: bold; padding-top: .2em; background-color: azure; }
-	.info { text-align: center; position: relative; margin: 0 auto; width: 70%; padding: 1em; border: .2em solid maroon; border-radius: .5em; margin-bottom: 1em; }
+#contents {
+	padding: 0;
+	margin: .5em;
+	border-top: solid .5em navy;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+	height: 5em;
+	width: 30%;
+}
+#beforeGakki { display: flex; justify-content: center; width: 100%; margin: 0 auto; text-align: center; }
+#beforeGakki_contents {
+	padding: 0 0 1em 0;
+	margin: .5em;
+	border-top: solid .5em forestgreen;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+	width: 64%;
+}
+#DMcontents {
+	padding: 0;
+	margin: .5em;
+	border-top: solid .5em black;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);
+	height: 5em;
+	width: 30%;
+	background-color: whitesmoke;
+}
+#beforeGakki_weeknum { font-weight: bold; padding-top: .2em; background-color: lightyellow; }
+#DMweeknum { margin-bottom: 1em; font-weight: bold; padding-top: .2em; background-color: lightgray; }
+#weeknum { margin-bottom: 1em; font-weight: bold; padding-top: .2em; background-color: azure; }
+.info { text-align: center; position: relative; margin: 0 auto; width: 70%; padding: 1em .5em; border: .2em solid maroon; border-radius: .5em; margin-bottom: 1em; }
 .infoTitle { position: absolute; display: inline-block; top: -.7em; left: .7em; padding: 0 10px; line-height: 1.5em; font-size: 1em; background: white; color: maroon; font-weight: bold; }
 .ToTop{ width: 3em; height: 3em; position: fixed; right: 2em; bottom: 2em; background: orange; opacity: 0.6; border-radius: 50%; }
 .ToTop a{ position: relative; display: block; width: 5em; height: 5em; }
