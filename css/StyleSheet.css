@@ -33,7 +33,7 @@
 #beforeGakki_weeknum { font-weight: bold; padding-top: .2em; background-color: lightyellow; }
 #DMweeknum { margin-bottom: 1em; font-weight: bold; padding-top: .2em; background-color: lightgray; }
 #weeknum { margin-bottom: 1em; font-weight: bold; padding-top: .2em; background-color: azure; }
-.info { text-align: center; position: relative; margin: 0 auto; width: 70%; padding: 1em .5em; border: .2em solid maroon; border-radius: .5em; margin-bottom: 1em; }
+.info { text-align: center; position: relative; margin: 0 auto; width: 80%; padding: 1em .5em; border: .2em solid maroon; border-radius: .5em; margin-bottom: 1em; margin-right: .5em; }
 .infoTitle { position: absolute; display: inline-block; top: -.7em; left: .7em; padding: 0 10px; line-height: 1.5em; font-size: 1em; background: white; color: maroon; font-weight: bold; }
 .ToTop{ width: 3em; height: 3em; position: fixed; right: 2em; bottom: 2em; background: orange; opacity: 0.6; border-radius: 50%; }
 .ToTop a{ position: relative; display: block; width: 5em; height: 5em; }
