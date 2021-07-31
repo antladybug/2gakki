@@ -53,9 +53,9 @@ a:link, a:visited, a:hover, a:active { color: black; }
 .contents div a:hover { box-shadow: 0 15px 30px -5px rgba( 0, 0, 0, .15 ), 0 0 5px rgba( 0, 0, 0, .1 ); transform: translateY( -4px ); padding: .5em; }
 
 @media screen and ( max-width: 600px ){ 
-	html{ font-size: 20px; }
+	html{ font-size: 1.5em; line-height: 1.2em; }
 	.ToTop{ width: 5rem; height: 5rem; position: fixed; right: 2rem; bottom: 2rem; border-radius: 50%; }
 	.ToTop a{ position: relative; display: block; width: 7rem; height: 7rem; }
 	.ToTop::before{ position: absolute; font-size: 1rem; border-top: .5rem solid white; border-right: .5rem solid white; border-right-radius: 20px; border-radius: 0 .12rem; content: ""; transform: translate( 1rem, -.5rem ) rotate( 315deg ); display: inline-block; padding-top: 0rem; padding-left: 0rem; width: 2rem; height: 2rem; left: .3rem; bottom: .3rem; }
-	#contents, #DMcontents, #beforeGakki, .info { width: 95% !important; }
+	#contents, #DMcontents, #beforeGakki, .info { width: 93% !important; }
 }
