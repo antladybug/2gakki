@@ -53,5 +53,5 @@ a:link, a:visited, a:hover, a:active { color: black; }
 .contents div a:hover { box-shadow: 0 15px 30px -5px rgba( 0, 0, 0, .15 ), 0 0 5px rgba( 0, 0, 0, .1 ); transform: translateY( -4px ); padding: .5em; }
 
 @media screen and ( max-width: 600px ){ 
-	#contents, #DMcontents, #beforeGakki, .info { width: 95% !important; }
+	#contents, #DMcontents, #beforeGakki, .info { font-size: 20px; width: 95% !important; }
 }
