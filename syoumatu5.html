@@ -10,18 +10,15 @@
 			#ToHome { border: solid 1px black; padding: .7em 1em; position: absolute; top: .5em; right: 1em; }
 			h1 { border-left: .2em solid maroon; background-color: wheat; margin: 3em 0 1em 0; font-size: 1.5em; padding: .3em 0; }
 			.ToTop{ background: green; }
-			.balloon{ position: relative; padding: 1em; margin-top: .5em; background-color: orange; color: white; border-radius: 10px; width: 30%; left : 5em; }
-			.balloon::before{ content: ''; position: absolute; display: block; width: 0; height: 0; border-radius: 50%; transform: rotate( 45deg ); left: 20px; top: -15px; border-left: 20px solid orange; border-top: 20px solid orange; border-right: 20px solid transparent; border-bottom: 20px solid transparent; }
-			.balloon::after{ content: ''; position: absolute; display: block; width: 0; height: 0; border-radius: 50%; transform: rotate(45deg); left: 35px; top: -20px; border-left: 20px solid white; border-top: 20px solid white; border-right: 20px solid transparent; border-bottom: 20px solid transparent; }
+			.balloon{ background-color: orange;}
+			.balloon::before{ border-left: 20px solid orange; border-top: 20px solid orange; }
 			a { text-decoration: none; }
 			a:link, a:visited, a:hover, a:active { color: black; }
-			.LinkAnserP { background-color: lightgreen; border: solid 1px black; padding: .7em 1em; width: 70%; margin: 1em 0 0 5em; }
-			.LinkAnserP a:hover { opacity: 0.5; }
 			#ToHome a:hover { font-size: 1.2em; }
 			h2 { margin: 0; font-size: 1.2em; }
 		</style>
 	</head>
-	<body>
+	<body id = "SubPage_top">
 		<div id = "ToHome"><a href = "index.html">ホーム画面へ</a></div>
 		<h1>【第5週の確認テスト範囲】サービスマネジメント</h1>
 		<div class="balloon">合格教本の第6章！P362</div>
@@ -61,6 +58,6 @@
 		<h2>問12：</h2>
 		<div style = "padding-left: 2em; margin-right: 1em;">JIS Q 27001:2014(情報セキュリティマネジメントシステム－要求事項)に基づいてISMS内部監査を行った結果として判明した状況のうち，監査人が指摘事項として監査報告書に記載すべきものはどれか。</div>
 		<div class = "LinkAnserP"><a href = "https://www.fe-siken.com/kakomon/30_aki/q58.html" target = "_blank">平成30年秋期 午前問58へ</a></div>
-		<div class = "ToTop"><a href = "#ToHome"></a></div>
+		<div class = "ToTop"><a href = "#SubPage_top"></a></div>
 	</body>
 </html>
