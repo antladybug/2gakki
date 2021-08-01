@@ -11,9 +11,8 @@
 			#wrapperToi { width: 85%; margin: 1em; padding: 0 .5em; }
 			#ToHome { border: solid 1px black; padding: .7em 1em; position: absolute; top: .5em; right: 1em; }
 			h1 { border-left: .3em solid olive; background-color: palegoldenrod; margin: 3em 0 1em .3em; font-size: 1.3em; padding: .3em 0; }
-			.balloon{ width: 10rem; position: relative; padding: 1em; margin-top: .5em; background-color: teal; color: white; border-radius: 10px; width: 30%; left : 5em; }
-			.balloon::before{ content: ''; position: absolute; display: block; width: 0; height: 0; border-radius: 50%; transform: rotate( 45deg ); left: 20px; top: -15px; border-left: 20px solid teal; border-top: 20px solid teal; border-right: 20px solid transparent; border-bottom: 20px solid transparent; }
-			.balloon::after{ content: ''; position: absolute; display: block; width: 0; height: 0; border-radius: 50%; transform: rotate(45deg); left: 35px; top: -20px; border-left: 20px solid white; border-top: 20px solid white; border-right: 20px solid transparent; border-bottom: 20px solid transparent; }
+			.balloon{ background-color: teal;}
+			.balloon::before{ border-left: 20px solid teal; border-top: 20px solid teal; }
 			a { text-decoration: none; }
 			a:link, a:visited, a:hover, a:active { color: black; }
 			.LinkAnserP { background-color: lightgreen; border: solid 1px black; padding: .7em 3em 0 1em; width: 70%; margin: 1em 0 0 5em; }
@@ -32,7 +31,7 @@
 			.mondaiImg7 { background: url( "img/mondai.png" ); margin: .5em 0;width: 341px; height: 183px; margin-left: 2em; background-position: 0px -1298px; }
 		</style>
 	</head>
-	<body>
+	<body id = "SubPage_top">
 		<div id = "ToHome"><a href = "index.html">ホーム画面へ</a></div>
 		<h1>【第5週】演習問題</h1>
 		<div class="balloon">Let's 試験対策！P334～361</div>
@@ -150,6 +149,6 @@
 				</div>
 			</div>
 		</div>
-		<div class = "ToTop"><a href = "#ToHome"></a></div>
+		<div class = "SubPage_top"><a href = "#Page_top"></a></div>
 	</body>
 </html>
