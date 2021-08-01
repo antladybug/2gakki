@@ -3,64 +3,153 @@
 	<head>
 		<meta charset = "UTF-8">
 		<meta name = "viewport" content = "width = device-width, initial-scale = 1">
-		<title>【第5週】章末問題まとめ</title>
+		<title>【第5週】演習問題まとめ</title>
 		<link rel="shortcut icon" type="image/x-icon" href="img/iconSub.png">
 		<link rel = "stylesheet" href = "css/StyleSheet.css" />
 		<style>
-			#ToHome { border: solid 1px black; padding: .7em 1em; position: absolute; top: .5em; right: 5em; }
-			h1 { border-left: .2em solid maroon; background-color: wheat; margin: 3em 0 1em 0; font-size: 1.5em; padding: .3em 0; }
-			.ToTop{ background: green; }
-			.balloon{ position: relative; padding: 1em; margin-top: .5em; background-color: orange; color: white; border-radius: 10px; width: 30%; left : 5em; }
-			.balloon::before{ content: ''; position: absolute; display: block; width: 0; height: 0; border-radius: 50%; transform: rotate( 45deg ); left: 20px; top: -15px; border-left: 20px solid orange; border-top: 20px solid orange; border-right: 20px solid transparent; border-bottom: 20px solid transparent; }
+			.ToTop{ background: orangered; }
+			#wrapperToi { width: 85%; margin: 1em; padding: 0 .5em; }
+			#ToHome { border: solid 1px black; padding: .7em 1em; position: absolute; top: .5em; right: 1em; }
+			h1 { border-left: .3em solid olive; background-color: palegoldenrod; margin: 3em 0 1em .3em; font-size: 1.3em; padding: .3em 0; }
+			.balloon{ width: 10rem; position: relative; padding: 1em; margin-top: .5em; background-color: teal; color: white; border-radius: 10px; width: 30%; left : 5em; }
+			.balloon::before{ content: ''; position: absolute; display: block; width: 0; height: 0; border-radius: 50%; transform: rotate( 45deg ); left: 20px; top: -15px; border-left: 20px solid teal; border-top: 20px solid teal; border-right: 20px solid transparent; border-bottom: 20px solid transparent; }
 			.balloon::after{ content: ''; position: absolute; display: block; width: 0; height: 0; border-radius: 50%; transform: rotate(45deg); left: 35px; top: -20px; border-left: 20px solid white; border-top: 20px solid white; border-right: 20px solid transparent; border-bottom: 20px solid transparent; }
 			a { text-decoration: none; }
 			a:link, a:visited, a:hover, a:active { color: black; }
-			.LinkAnserP { background-color: lightgreen; border: solid 1px black; padding: .7em 1em; width: 70%; margin: 1em 0 0 5em; }
+			.LinkAnserP { background-color: lightgreen; border: solid 1px black; padding: .7em 3em 0 1em; width: 70%; margin: 1em 0 0 5em; }
 			.LinkAnserP a:hover { opacity: 0.5; }
 			#ToHome a:hover { font-size: 1.2em; }
 			h2 { margin: 0; font-size: 1.2em; }
+			input#acd-check1, input#acd-check2, input#acd-check3, input#acd-check4, input#acd-check5, input#acd-check6, input#acd-check7, input#acd-check8, input#acd-check9, input#acd-check10 { display: none; }
+			.acd-label{ border-top:  .3em solid crimson; background: lemonchiffon; color: crimson; font-weight: bold; display: block; margin: .5em .3em; padding: .5em; }
+			.acd-content{ height: 0; visibility: hidden; }
+			.acd-check:checked + .acd-label + .acd-content{ border:  1px dashed crimson; height: 3em; margin: 0 3em; padding: .5em; visibility: visible; }
+			.mondaiImg1 { background: url( "img/mondai.png" ); margin: .5em 0;width: 400px; height: 235px; margin-left: 2em; }
+			.mondaiImg2 { background: url( "img/mondai.png" ); margin: .5em 0;width: 412px; height: 171px; margin-left: 2em; background-position: 0px -240px; }
+			.mondaiImg3 { background: url( "img/mondai.png" ); margin: .5em 0;width: 412px; height: 291px; margin-left: 2em; background-position: 0px -514px; }
+			.mondaiImg4 { background: url( "img/mondai.png" ); margin: .5em 0;width: 366px; height: 262px; margin-left: 2em; background-position: 0px -825px; }
+			.mondaiImg6 { background: url( "img/mondai.png" ); margin: .5em 0;width: 365px; height: 193px; margin-left: 2em; background-position: 0px -1100px; }
+			.mondaiImg7 { background: url( "img/mondai.png" ); margin: .5em 0;width: 341px; height: 183px; margin-left: 2em; background-position: 0px -1298px; }
 		</style>
 	</head>
 	<body>
 		<div id = "ToHome"><a href = "index.html">ホーム画面へ</a></div>
-		<h1>【第5週の確認テスト範囲】サービスマネジメント</h1>
-		<div class="balloon">合格教本の第6章！P362</div>
-		<h2>問1：</h2>
-		<div style = "padding-left: 2em; margin-right: 1em;">サービスマネジメントにおいて，サービスレベル管理の要求事項はどれか。</div>
-		<div class = "LinkAnserP"><a href = "https://www.fe-siken.com/kakomon/29_aki/q55.html" target = "_blank">平成29年秋期 午前問55へ</a></div>
-		<h2>問2：</h2>
-		<div style = "padding-left: 2em; margin-right: 1em;">ITILでは，可用性管理における重要業績評価指標(KPI)の例として，保守性を表す指標値の短縮を挙げている。この指標に該当するものはどれか。</div>
-		<div class = "LinkAnserP"><a href = "https://www.fe-siken.com/kakomon/28_aki/q57.html" target = "_blank">平成28年秋期 午前問57へ</a></div>
-		<h2>問3：</h2>
-		<div style = "padding-left: 2em; margin-right: 1em;">システムの開発部門と運用部門が別々に組織化されているとき，開発から運用への移行を円滑かつ効果的に進めるための方法のうち，適切なものはどれか。</div>
-		<div class = "LinkAnserP"><a href = "https://www.fe-siken.com/kakomon/29_haru/q56.html" target = "_blank">平成29年春期 午前問56へ</a></div>
-		<h2>問4：</h2>
-		<div style = "padding-left: 2em; margin-right: 1em;">ITサービスマネジメントの活動のうち，インシデント管理及びサービス要求管理として行うものはどれか。</div>
-		<div class = "LinkAnserP"><a href = "https://www.fe-siken.com/kakomon/29_haru/q57.html" target = "_blank">平成29年春期 午前問57へ</a></div>
-		<h2>問5：</h2>
-		<div style = "padding-left: 2em; margin-right: 1em;">新規システムにおけるデータのバックアップ方法に関する記述のうち，最も適切なものはどれか。</div>
-		<div class = "LinkAnserP"><a href = "https://www.fe-siken.com/kakomon/29_aki/q56.html" target = "_blank">平成29年秋期 午前問56へ</a></div>
-		<h2>問6：</h2>
-		<div style = "padding-left: 2em; margin-right: 1em;">サービスデスク組織の構造とその特徴のうち，ローカルサービスデスクのものはどれか。</div>
-		<div class = "LinkAnserP"><a href = "https://www.fe-siken.com/kakomon/30_haru/q56.html" target = "_blank">平成30年春期 午前問56へ</a></div>
-		<h2>問7：</h2>
-		<div style = "padding-left: 2em; margin-right: 1em;">落雷によって発生する過電圧の被害から情報システムを守るための手段として，有効なものはどれか。</div>
-		<div class = "LinkAnserP"><a href = "https://www.fe-siken.com/kakomon/29_aki/q57.html" target = "_blank">平成29年秋期 午前問57へ</a></div>
-		<h2>問8：</h2>
-		<div style = "padding-left: 2em; margin-right: 1em;">ミッションクリティカルシステムの意味として，適切なものはどれか。</div>
-		<div class = "LinkAnserP"><a href = "https://www.fe-siken.com/kakomon/28_haru/q55.html" target = "_blank">平成28年春期 午前問55へ</a></div>
-		<h2>問9：</h2>
-		<div style = "padding-left: 2em; margin-right: 1em;">システム監査実施体制のうち，システム監査人の独立性の観点から避けるべきものはどれか。</div>
-		<div class = "LinkAnserP"><a href = "https://www.fe-siken.com/kakomon/30_haru/q59.html" target = "_blank">平成30年春期 午前問59へ</a></div>
-		<h2>問10：</h2>
-		<div style = "padding-left: 2em; margin-right: 1em;">システム監査人が実施するヒアリングに関する記述のうち，適切なものはどれか。</div>
-		<div class = "LinkAnserP"><a href = "https://www.fe-siken.com/kakomon/29_aki/q59.html" target = "_blank">平成29年秋期 午前問59へ</a></div>
-		<h2>問11：</h2>
-		<div style = "padding-left: 2em; margin-right: 1em;">システム運用業務のオペレーション管理に関する監査で判明した状況のうち，指摘事項として監査報告書に記載すべきものはどれか。</div>
-		<div class = "LinkAnserP"><a href = "https://www.fe-siken.com/kakomon/29_aki/q58.html" target = "_blank">平成29年秋期 午前問58へ</a></div>
-		<h2>問12：</h2>
-		<div style = "padding-left: 2em; margin-right: 1em;">JIS Q 27001:2014(情報セキュリティマネジメントシステム－要求事項)に基づいてISMS内部監査を行った結果として判明した状況のうち，監査人が指摘事項として監査報告書に記載すべきものはどれか。</div>
-		<div class = "LinkAnserP"><a href = "https://www.fe-siken.com/kakomon/30_aki/q58.html" target = "_blank">平成30年秋期 午前問58へ</a></div>
+		<h1>【第5週】演習問題</h1>
+		<div class="balloon">Let's 試験対策！P334～361</div>
+		<div id = "wrapperToi">
+			<h2>問1：</h2>
+			<div style = "padding-left: 1em; padding-right: .5em;">あるプロジェクトの日程計画をアローダイアグラムで示す。クリティカルパスはどれか。</div>
+			<div class = "mondaiImg1"></div>
+			<div style = "margin-left: 4em;"><span>ア：</span>A，C，E，F</div>
+			<div style = "margin-left: 4em;"><span>イ：</span>A，D，G</div>
+			<div style = "margin-left: 4em;"><span>ウ：</span>B，E，F</div>
+			<div style = "margin-left: 4em;"><span>エ：</span>B，E，G</div>
+			<input id="acd-check1" class="acd-check" type="checkbox">
+			<label class="acd-label" for="acd-check1">回答をみる</label>
+			<div class="acd-content">
+				<div>
+					<div>正解は「<span style = "color: crimson; font-weight: bold;">ウ</span>」です。</div>
+					<div>解説サイト：<a href = "https://www.fe-siken.com/bunya.php?m=14&s=6&no=2" target = "_blank">平成24春期 問52へ</a></div>
+				</div>
+			</div>
+			<h2>問2：</h2>
+			<div style = "padding-left: 1em; padding-right: 1em;">アローダイアグラムの日程計画をもつプロジェクトの、開始から終了までの最少所要日数は何日か。</div>
+			<div class = "mondaiImg2"></div>
+			<div style = "margin-left: 4em;"><span>ア：</span>9</div>
+			<div style = "margin-left: 4em;"><span>イ：</span>10</div>
+			<div style = "margin-left: 4em;"><span>ウ：</span>11</div>
+			<div style = "margin-left: 4em;"><span>エ：</span>12</div>
+			<input id="acd-check2" class="acd-check" type="checkbox">
+			<label class="acd-label" for="acd-check2">回答をみる</label>
+			<div class="acd-content">
+				<div>
+					<div>正解は「<span style = "color: crimson; font-weight: bold;">エ</span>」です。</div>
+					<div>解説サイト：<a href = "https://www.fe-siken.com/kakomon/31_haru/q53.html" target = "_blank">平成31年春期 午前問53へ</a></div>
+				</div>
+			</div>
+			<h2>問3：</h2>
+			<div style = "padding-left: 1em; padding-right: 1em;">図のプロジェクトの日程計画において、プロジェクトの所要日数は何日か。</div>
+			<div class = "mondaiImg3"></div>
+			<div style = "margin-left: 4em;"><span>ア：</span>40</div>
+			<div style = "margin-left: 4em;"><span>イ：</span>45</div>
+			<div style = "margin-left: 4em;"><span>ウ：</span>50</div>
+			<div style = "margin-left: 4em;"><span>エ：</span>55</div>
+			<input id="acd-check3" class="acd-check" type="checkbox">
+			<label class="acd-label" for="acd-check3">回答をみる</label>
+			<div class="acd-content">
+				<div>
+					<div>正解は「<span style = "color: crimson; font-weight: bold;">エ</span>」です。</div>
+					<div>解説サイト：<a href = "https://www.fe-siken.com/bunya.php?m=14&s=6&no=5" target = "_blank">平成30年秋期 問52へ</a></div>
+				</div>
+			</div>
+			<h2>問4：</h2>
+			<div style = "padding-left: 1em; padding-right: 1em;">表は、1人で行うプログラム開発の開始時点での計画表である。6月1日に開発を開始し、6月11日の終了時点でコーディング作業の25%が終了した。6月11日の終了時点で残っている作業量は全体の約何%か。ここで、開発は、土曜日と日曜日を除く週5日間で行うものとする。</div>
+			<div class = "mondaiImg4"></div>
+			<div style = "margin-left: 4em;"><span>ア：</span>30</div>
+			<div style = "margin-left: 4em;"><span>イ：</span>47</div>
+			<div style = "margin-left: 4em;"><span>ウ：</span>52</div>
+			<div style = "margin-left: 4em;"><span>エ：</span>53</div>
+			<input id="acd-check4" class="acd-check" type="checkbox">
+			<label class="acd-label" for="acd-check4">回答をみる</label>
+			<div class="acd-content">
+				<div>
+					<div>正解は「<span style = "color: crimson; font-weight: bold;">イ</span>」です。</div>
+					<div>解説サイト：<a href = "https://www.fe-siken.com/bunya.php?m=14&s=6&no=6" target = "_blank">平成30年秋期 問52へ</a></div>
+				</div>
+			</div>
+			<h2>問5：</h2>
+			<div style = "padding-left: 1em; padding-right: 1em;">テストの進捗管理に使用する指標として、最も適切なものはどれか。</div>
+			<div style = "margin-left: 4em;"><span>ア：</span>テスト項目の消化件数</div>
+			<div style = "margin-left: 4em;"><span>イ：</span>テストデータの作成量</div>
+			<div style = "margin-left: 4em;"><span>ウ：</span>プログラムの起動回数</div>
+			<div style = "margin-left: 4em;"><span>エ：</span>プログラムの修正量</div>
+			<input id="acd-check5" class="acd-check" type="checkbox">
+			<label class="acd-label" for="acd-check5">回答をみる</label>
+			<div class="acd-content">
+				<div>
+					<div>正解は「<span style = "color: crimson; font-weight: bold;">ア</span>」です。</div>
+					<div>解説サイト：<a href = "https://www.fe-siken.com/bunya.php?m=14&s=6&no=24" target = "_blank">平成30年秋期 問52へ</a></div>
+				</div>
+			</div>
+			<h2>問6：</h2>
+			<div style = "padding-left: 1em; padding-right: 1em;">
+			全部で100画面から構成されるシステムの画面を作成する。100画面を規模と複雑さで分類したときの内訳は次のとおりである。<br>
+			　規模が"小"で、複雑度が"単純"である画面：30<br>
+			　規模が"中"で、複雑度が"普通"である画面：40<br>
+			　規模が"大"で、複雑度が"普通"である画面：20<br>
+			　規模が"大"で、複雑度が"複雑"である画面：10<br>
+			全ての画面を作成する総工数を、表の作成工数を用いて見積もると何人日になるか。ここで、全部の画面のレビューと修正に5人日を要し、作業の管理にはレビューと修正の工数を含めた作業工数の20%を要するものとする。
+			</div>
+			<div class = "mondaiImg6"></div>
+			<div style = "margin-left: 4em;"><span>ア：</span>80</div>
+			<div style = "margin-left: 4em;"><span>イ：</span>85</div>
+			<div style = "margin-left: 4em;"><span>ウ：</span>101</div>
+			<div style = "margin-left: 4em;"><span>エ：</span>102</div>
+			<input id="acd-check6" class="acd-check" type="checkbox">
+			<label class="acd-label" for="acd-check6">回答をみる</label>
+			<div class="acd-content">
+				<div>
+					<div>正解は「<span style = "color: crimson; font-weight: bold;">エ</span>」です。</div>
+					<div>解説サイト：<a href = "https://www.fe-siken.com/bunya.php?m=14&s=7&no=5" target = "_blank">平成31年春期 問53へ</a></div>
+				</div>
+			</div>
+			<h2>問7：</h2>
+			<div style = "padding-left: 1em; padding-right: 1em;">あるアプリケーションプログラムの、ファンクションポイント法によるユーザファンクションタイプごとの個数及び重み付け係数は、表のとおりである。このアプリケーションプログラムのファンクションポイント数は幾らか。ここで、複雑さの補正係数は0.75とする
+			</div>
+			<div class = "mondaiImg7"></div>
+			<div style = "margin-left: 4em;"><span>ア：</span>18</div>
+			<div style = "margin-left: 4em;"><span>イ：</span>24</div>
+			<div style = "margin-left: 4em;"><span>ウ：</span>30</div>
+			<div style = "margin-left: 4em;"><span>エ：</span>32</div>
+			<input id="acd-check7" class="acd-check" type="checkbox">
+			<label class="acd-label" for="acd-check7">回答をみる</label>
+			<div class="acd-content">
+				<div>
+					<div>正解は「<span style = "color: crimson; font-weight: bold;">ア</span>」です。</div>
+					<div>解説サイト：<a href = "https://www.fe-siken.com/bunya.php?m=14&s=7&no=22" target = "_blank">平成30春期 問54</a></div>
+				</div>
+			</div>
+		</div>
 		<div class = "ToTop"><a href = "#ToHome"></a></div>
 	</body>
 </html>
