@@ -8,7 +8,7 @@ body { -webkit-text-size-adjust: 100%; }
 @-webkit-keyframes blink { 0% { opacity: 0; } 100% { opacity: 1; } }
 @keyframes blink { 0% { opacity: 0 ;} 100% { opacity: 1; } }
 
-.info { background-color: white; text-align: center; position: relative; margin: 0 auto; width: 80%; padding: 1em; border: .2em solid maroon; border-radius: .5em; z-index: 2; margin: .5em; }
+.info { background-color: white; text-align: center; position: relative; margin: 0 auto; width: 80%; padding: 1em; border: .2em solid maroon; border-radius: .5em; z-index: 2; }
 .infoTitle { position: absolute; display: inline-block; top: -.7em; left: .7em; padding: 0 10px; line-height: 1.5em; font-size: 1em; background: white; color: maroon; font-weight: bold; }
 .ToTop{ width: 3em; height: 3em; position: fixed; right: 2em; bottom: 2em; background: orange; opacity: 0.6; border-radius: 50%; z-index: 1; }
 .ToTop a{ position: relative; display: block; width: 5em; height: 5em; }
@@ -17,8 +17,8 @@ body { -webkit-text-size-adjust: 100%; }
 
 #week { display: flex; justify-content: center; width: 100%; margin: 0 auto; text-align: center; }
 #contents { padding: 0; margin: .5em; border-top: solid .5em navy; box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22); height: 5em; width: 30%; }
-#beforeGakki { display: flex; justify-content: center; width: 100%; margin: 0 auto; text-align: center; }
-#beforeGakki_contents { padding: 0 0 1em 0; margin: .5em; border-top: solid .5em forestgreen; box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22); width: 64%; }
+#beforeGakki { display: flex; justify-content: center; width: 40rem; margin: 1em auto; text-align: center; border-top: solid .5em forestgreen; box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);  }
+#beforeGakki_contents { padding: 0 0 1em 0; margin: .5em; width: 64%; }
 #DMcontents { padding: 0; margin: .5em; border-top: solid .5em black; box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22); height: 5em; width: 30%; background-color: whitesmoke; }
 #beforeGakki_weeknum { font-weight: bold; padding-top: .2em; background-color: lightyellow; }
 #DMweeknum { margin-bottom: 1em; font-weight: bold; padding-top: .2em; background-color: lightgray; }
@@ -36,6 +36,12 @@ a { text-decoration: none; }
 a:link, a:visited, a:hover, a:active { color: black; }
 .beforeGakki div a:hover { box-shadow: 0 15px 30px -5px rgba( 0, 0, 0, .15 ), 0 0 5px rgba( 0, 0, 0, .1 ); transform: translateY( -4px ); padding: .5em; }
 .contents div a:hover { box-shadow: 0 15px 30px -5px rgba( 0, 0, 0, .15 ), 0 0 5px rgba( 0, 0, 0, .1 ); transform: translateY( -4px ); padding: .5em; }
+.WaveRed { background: url( "../img/wave-red.png" ) bottom repeat-x; background-size: 1em; }
+
+/* 共通 */
+.CodeMaroon { color: maroon; }
+.FontBold { font-weight: bold; }
+.MarginTB10 { margin-top: 1em; margin-bottom: 1em; }
 
 /* サブページ */
 #SubPage_top { position: absolute; top: 0; width: 95%; margin-left: .5em; }
