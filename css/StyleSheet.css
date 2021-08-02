@@ -17,7 +17,7 @@ body { -webkit-text-size-adjust: 100%; }
 
 #week { display: flex; justify-content: center; width: 100%; margin: 0 auto; text-align: center; }
 #contents { padding: 0; margin: .5em; border-top: solid .5em navy; box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22); height: 5em; width: 30%; }
-#beforeGakki { display: flex; justify-content: center; width: 40rem; margin: 1em auto; text-align: center; border-top: solid .5em forestgreen; box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);  }
+#beforeGakki { display: flex; justify-content: center; width: 65%; margin: 1em auto; text-align: center; border-top: solid .5em forestgreen; box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);  }
 #beforeGakki_contents { padding: 0 0 1em 0; margin: .5em; width: 64%; }
 #DMcontents { padding: 0; margin: .5em; border-top: solid .5em black; box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22); height: 5em; width: 30%; background-color: whitesmoke; }
 #beforeGakki_weeknum { font-weight: bold; padding-top: .2em; background-color: lightyellow; }
@@ -42,6 +42,7 @@ a:link, a:visited, a:hover, a:active { color: black; }
 .CodeMaroon { color: maroon; }
 .FontBold { font-weight: bold; }
 .MarginTB10 { margin-top: 1em; margin-bottom: 1em; }
+.MarginL10 { margin-left: 1em; }
 
 /* サブページ */
 #SubPage_top { position: absolute; top: 0; width: 95%; margin-left: .5em; }
@@ -50,7 +51,10 @@ a:link, a:visited, a:hover, a:active { color: black; }
 .balloon::after{ content: ''; position: absolute; display: block; width: 0; height: 0; border-radius: 50%; transform: rotate(45deg); left: 35px; top: -20px; border-left: 20px solid white; border-top: 20px solid white; border-right: 20px solid transparent; border-bottom: 20px solid transparent; }
 .LinkAnserP { background-color: lightgreen; border: solid 1px black; padding: .7em 1em; width: 70%; margin: 1em 0 0 2em; }
 .LinkAnserP:hover { opacity: 0.5; }
+.hanten { padding: .7em 0; }
+.hanten::before { content: "反転学習"; background: pink; border: solid 3px violet; margin: .5em; padding: .5em; }
+.hanten ul li { list-style-type: none; padding: .5em 1em; margin: .5em; background: lavender; border-top: solid 2px gray; border-bottom: solid 1px gray; }
 
-@media screen and ( max-width: 600px ){ 
+@media screen and ( max-width: 600px ){
 	#contents, #DMcontents, #beforeGakki, .info { width: 87% !important; }
 }
