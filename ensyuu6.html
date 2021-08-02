@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+		<title>【第6週】演習問題まとめ</title>
+		<link rel="shortcut icon" type="image/x-icon" href="img/iconSub.png">
+		<link rel = "stylesheet" href = "css/StyleSheet.css" />
+		<style>
+			.ToTop{ background: orangered; }
+			#wrapperToi { width: 85%; margin: 1em; padding: 0 .5em; }
+			#ToHome { border: solid 1px black; padding: .7em 1em; position: absolute; top: .5em; right: 1em; }
+			h1 { border-left: .3em solid olive; background-color: palegoldenrod; margin: 3em 0 1em .3em; font-size: 1.3em; padding: .3em 0; }
+			.balloon{ background-color: teal;}
+			.balloon::before{ border-left: 20px solid teal; border-top: 20px solid teal; }
+			a { text-decoration: none; }
+			a:link, a:visited, a:hover, a:active { color: black; }
+			.LinkAnserP { background-color: lightgreen; border: solid 1px black; padding: 1em 2em 1em 1em; width: 70%; margin: 1em 0 0 0; }
+			.LinkAnserP a:hover { opacity: 0.5; }
+			#ToHome a:hover { font-size: 1.2em; }
+			h2 { margin: 0; font-size: 1.2em; }
+			input#acd-check1, input#acd-check2, input#acd-check3, input#acd-check4, input#acd-check5, input#acd-check6, input#acd-check7, input#acd-check8, input#acd-check9, input#acd-check10 { display: none; }
+			.acd-label{ border-top:  .3em solid crimson; background: lemonchiffon; color: crimson; font-weight: bold; display: block; margin: .5em .3em; padding: .5em; }
+			.acd-content{ height: 0; visibility: hidden; }
+			.acd-check:checked + .acd-label + .acd-content{ border:  1px dashed crimson; height: 5em; margin: 0 3em; padding: 1em; visibility: visible; }
+			.mondaiImg1 { background: url( "img/ensyuu6.png" ); margin: .5em 0;width: 238px; height: 190px; }
+			.mondaiImg2 { background: url( "img/ensyuu6.png" ); margin: .5em 0;width: 412px; height: 171px; background-position: 0px -240px; }
+		</style>
+	</head>
+	<body id = "SubPage_top">
+		<div id = "ToHome"><a href = "index.html">ホーム画面へ</a></div>
+		<h1>【第5週】演習問題</h1>
+		<div class="balloon">Let's 試験対策！P340～361</div>
+		<div id = "wrapperToi">
+			<h2>問1：</h2>
+			<div style = "padding-left: 1em; padding-right: .5em;">
+			図のアローダイアグラムにおいて，プロジェクト全体の期間を短縮するために，作業A～Eの幾つかを1日ずつ短縮する。プロジェクト全体を2日短縮できる作業の組合せはどれか。
+			</div>
+			<div class = "mondaiImg1"></div>
+			<div style = "margin-left: 4em;"><span>ア：</span>A，C，E</div>
+			<div style = "margin-left: 4em;"><span>イ：</span>A，D</div>
+			<div style = "margin-left: 4em;"><span>ウ：</span>B，C，E</div>
+			<div style = "margin-left: 4em;"><span>エ：</span>B，D</div>
+			<input id="acd-check1" class="acd-check" type="checkbox">
+			<label class="acd-label" for="acd-check1">回答をみる</label>
+			<div class="acd-content">
+				<div>
+					<div>正解は「<span style = "color: crimson; font-weight: bold;">エ</span>」です。</div>
+					<div>解説サイト：<a href = "https://www.fe-siken.com/kakomon/30_haru/q51.html" target = "_blank">平成30年春期 午前問51へ</a></div>
+				</div>
+			</div>
+			<h2>問2：</h2>
+			<div style = "padding-left: 1em; padding-right: .5em;">
+			ある会場で資格試験を実施する際のアクティビティである"受付"と"試験"の依存関係のうち，プレシデンスダイアグラム法(PDM)の開始-終了関係はどれか。
+			</div>
+			<div style = "margin-left: 4em;"><span>ア：</span>受付の開始から30分経過したら，試験を開始する。</div>
+			<div style = "margin-left: 4em;"><span>イ：</span>受付の終了から10分経過したら，試験を開始する。</div>
+			<div style = "margin-left: 4em;"><span>ウ：</span>受付の終了から45分経過したら，試験を終了する。</div>
+			<div style = "margin-left: 4em;"><span>エ：</span>試験の開始から20分経過したら，受付を終了する。</div>
+			<input id="acd-check2" class="acd-check" type="checkbox">
+			<label class="acd-label" for="acd-check2">回答をみる</label>
+			<div class="acd-content">
+				<div>
+					<div>正解は「<span style = "color: crimson; font-weight: bold;">エ</span>」です。</div>
+					<div>解説サイト：<a href = "https://www.fe-siken.com/kakomon/31_haru/q52.html" target = "_blank">平成31年春期 午前問52へ</a></div>
+				</div>
+			</div>
+			<div class = "hanten">次の過去問に挑戦しよう！
+				<ul class = "MarginTB10">
+					<li>AP:応用情報：<a href = "https://www.ap-siken.com/kakomon/02_aki/q53.html" target = "_blank">令和2年秋期 午前問53へ</a></li>
+					<li>PM:プロジェクトマネージャー:<a href = "https://www.pm-siken.com/kakomon/29_haru/am2_10.html" target = "_blank">令和2年秋期 午前問53へ</a></li>
+				<ul>
+			</div>
+			<h2>問3：</h2>
+			<div style = "padding-left: 1em; padding-right: .5em;">
+			ある会場で資格試験を実施する際のアクティビティである"受付"と"試験"の依存関係のうち，プレシデンスダイアグラム法(PDM)の開始-終了関係はどれか。
+			</div>
+			<div style = "margin-left: 4em;"><span>ア：</span>受付の開始から30分経過したら，試験を開始する。</div>
+			<div style = "margin-left: 4em;"><span>イ：</span>受付の終了から10分経過したら，試験を開始する。</div>
+			<div style = "margin-left: 4em;"><span>ウ：</span>受付の終了から45分経過したら，試験を終了する。</div>
+			<div style = "margin-left: 4em;"><span>エ：</span>試験の開始から20分経過したら，受付を終了する。</div>
+			<input id="acd-check3" class="acd-check" type="checkbox">
+			<label class="acd-label" for="acd-check3">回答をみる</label>
+			<div class="acd-content">
+				<div>
+					<div>正解は「<span style = "color: crimson; font-weight: bold;">エ</span>」です。</div>
+					<div>解説サイト：<a href = "https://www.fe-siken.com/kakomon/31_haru/q52.html" target = "_blank">平成31年春期 午前問52へ</a></div>
+				</div>
+			</div>
+		</div>
+		<div class = "ToTop"><a href = "#SubPage_top"></a></div>
+	</body>
+</html>
