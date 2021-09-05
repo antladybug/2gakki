@@ -20,8 +20,10 @@ body { -webkit-text-size-adjust: 100%; }
 #beforeGakki { display: flex; justify-content: center; width: 65%; margin: 1em auto; text-align: center; border-top: solid .5em forestgreen; box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22);  }
 #beforeGakki_contents { padding: 0 0 1em 0; margin: .5em; width: 64%; }
 #DMcontents { padding: 0; margin: .5em; border-top: solid .5em black; box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22); height: 5em; width: 30%; background-color: whitesmoke; }
+#NEWcontents { padding: 0; margin: .5em; border-top: solid .5em firebrick; box-shadow: 0 3px 5px rgba(0, 0, 0, 0.22); height: 5em; width: 30%; background-color: lemonchiffon; }
 #beforeGakki_weeknum { font-weight: bold; padding-top: .2em; background-color: lightyellow; }
 #DMweeknum { margin-bottom: 1em; font-weight: bold; padding-top: .2em; background-color: lightgray; }
+#NEWweeknum { margin-bottom: 1em; font-weight: bold; padding-top: .2em; background-color: orangered; }
 #weeknum { margin-bottom: 1em; font-weight: bold; padding-top: .2em; background-color: azure; }
 .beforeGakki { display: block; position: relative; margin: .35em auto; margin-top: 1em; padding: 1em; padding-top: 3em; width: 90%; background: whitesmoke; }
 .beforeGakkiFE div { margin-top: 0; }
@@ -37,6 +39,7 @@ a:link, a:visited, a:hover, a:active { color: black; }
 .beforeGakki div a:hover { box-shadow: 0 15px 30px -5px rgba( 0, 0, 0, .15 ), 0 0 5px rgba( 0, 0, 0, .1 ); transform: translateY( -4px ); padding: .5em; }
 .contents div a:hover { box-shadow: 0 15px 30px -5px rgba( 0, 0, 0, .15 ), 0 0 5px rgba( 0, 0, 0, .1 ); transform: translateY( -4px ); padding: .5em; }
 .WaveRed { background: url( "../img/wave-red.png" ) bottom repeat-x; background-size: 1em; }
+.link { text-decoration: wavy underline crimson; margin: 0 .5em; text-underline-offset: .2em;  }
 
 /* 共通 */
 .CodeMaroon { color: maroon; }
